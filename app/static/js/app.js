@@ -80,7 +80,7 @@ const NewsList = {
     fetch('https://newsapi.org/v2/top-headlines?country=us',
     {
       headers: { 
-        'Authorization': 'Bearer --API key--'
+        'Authorization': 'Bearer ---'
       }
     })
 
@@ -103,7 +103,7 @@ const NewsList = {
       searchNews() {
         let self = this;
         fetch('https://newsapi.org/v2/everything?q='+ self.searchTerm + '&language=en', {
-          headers: {'Authorization': 'Bearer --API key--'}
+          headers: {'Authorization': 'Bearer ----'}
         })
         
         .then(function(response) {
