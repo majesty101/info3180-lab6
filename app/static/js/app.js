@@ -80,7 +80,7 @@ const NewsList = {
     fetch('https://newsapi.org/v2/top-headlines?country=us',
     {
       headers: { 
-        'Authorization': '9ee3b36c357c4566935a76191387af05'
+        'Authorization': '-----'
       }
     })
 
@@ -103,7 +103,7 @@ const NewsList = {
       searchNews() {
         let self = this;
         fetch('https://newsapi.org/v2/everything?q='+ self.searchTerm + '&language=en', {
-          headers: {'Authorization': '9ee3b36c357c4566935a76191387af05'}
+          headers: {'Authorization': '----'}
         })
         
         .then(function(response) {
